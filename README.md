@@ -1,1 +1,1 @@
-# CI_CD_Testing
+Project to learn and test CI/CD skills and processes.
