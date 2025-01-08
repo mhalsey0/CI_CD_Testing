@@ -30,8 +30,10 @@ jobs:
     - name: Set Up Safety
       run: pip install safety
 
-    - name: Run Safety
-      run: safety scan --target .
+    - name: Authorize Safety and scan
+      uses: pyupio/safety-action@v1
+      with:
+        api-key: ${{ secrets.SAFETY_API_TOKEN }}
 
     - name: Install bandit
       run: pip install bandit
