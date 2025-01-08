@@ -31,7 +31,7 @@ jobs:
       run: pip install safety
 
     - name: Run Safety
-      run: safety scan --target ./app.py
+      run: safety scan --target .
 
     - name: Install bandit
       run: pip install bandit
